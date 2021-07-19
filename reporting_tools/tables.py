@@ -1,5 +1,6 @@
-from .utils import fix_label
 import pathlib
+
+from .utils import fix_label
 
 
 def to_latex(df, label, caption, path, **kwargs):
