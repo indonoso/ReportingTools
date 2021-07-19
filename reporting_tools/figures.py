@@ -21,7 +21,7 @@ def create_paths(name, path_tex, path_figure, path_figure_reporting):
 
 def create_tex(label, caption, path_tex, path_figure, path_figure_reporting='figures/charts', width='width=0.8\\textwidth', position='h'):
     label = fix_label(label, 'figure')
-    path_tex, path_fig_tex, path_figure = create_paths(label.split(':')[-1], path_tex, path_figure, path_figure_reporting)
+    path_tex, path_figure_reporting, path_figure = create_paths(label.split(':')[-1], path_tex, path_figure, path_figure_reporting)
     create_tex_file(label, caption, path_tex, path_figure_reporting, width, position)
 
     return path_figure.as_posix()

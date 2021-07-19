@@ -5,5 +5,9 @@ setup(
     packages=find_packages(),
     version='0.1.0',
     description='Tools for getting tables and charts ready for latex',
-    author='Ivania Donoso-Guzmán'
+    author='Ivania Donoso-Guzmán',
+    install_requires=[
+            'seaborn',
+            'altair'
+        ],
 )
