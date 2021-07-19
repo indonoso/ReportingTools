@@ -3,11 +3,12 @@ from setuptools import find_packages, setup
 setup(
     name='reporting_tools',
     packages=find_packages(),
-    version='0.1.0',
+    version='0.1.1',
     description='Tools for getting tables and charts ready for latex',
     author='Ivania Donoso-Guzmán',
     install_requires=[
-            'seaborn',
-            'altair'
-        ],
+        'seaborn',
+        'altair',
+        "altair_saver"
+    ],
 )
